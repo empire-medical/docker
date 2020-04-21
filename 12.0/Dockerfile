@@ -67,6 +67,12 @@ RUN set -x;\
 RUN set -x;\
     pip3 install -U ptvsd
 
+
+# Install Cryptography
+RUN set -x;\
+    pip3 install -U cryptography
+
+
 # Install Odoo
 ENV ODOO_VERSION 12.0
 ARG ODOO_RELEASE=20200121
