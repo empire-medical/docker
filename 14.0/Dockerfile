@@ -59,7 +59,8 @@ RUN set -x;\
 
 # Install Cryptography
 RUN set -x;\
-    pip3 install -U cryptography
+    pip3 install --upgrade pip;\
+    pip install -U cryptography
 
 # Install Odoo
 ENV ODOO_VERSION 14.0
