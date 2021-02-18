@@ -83,6 +83,9 @@ RUN chown odoo /etc/odoo/odoo.conf \
     && chown -R odoo /mnt/extra-addons
 VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 
+# Set Permission to execute the Odoo Binary.
+RUN chmod +x /usr/bin/odoo
+
 # Expose Odoo services
 EXPOSE 8069 8071 8072 3333
 
