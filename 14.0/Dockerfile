@@ -62,6 +62,9 @@ RUN set -x;\
     pip3 install --upgrade pip;\
     pip install -U cryptography
 
+RUN set -x;\
+    pip3 install libsass
+
 # Install Odoo
 ENV ODOO_VERSION 14.0
 ARG ODOO_RELEASE=20210217
